@@ -12,3 +12,10 @@ str(data)
 data$Sex <- factor(data$Sex)
 str(data)
 
+#to download an excel file
+install.packages('xlsx')
+library(xlsx)
+
+#load data from sheet 1
+data <- read.xlsx('/Users/stevenfutter/downloads/all_alpha_16.xlsx', 1, stringsAsFactors=FALSE)
+

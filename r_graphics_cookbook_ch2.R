@@ -2,6 +2,12 @@
 str(mtcars)
 str(pressure)
 
+#and a data set on car fuel efficiency from 1984-2017
+data <- read.csv('/Users/stevenfutter/dropbox/R/r_graphics_cookbook/vehicles.csv')
+str(data)
+library(ggplot2)
+qplot(year, fuelCost08, data=data)
+
 # Creating a Scatterplot
 plot(mtcars$wt, mtcars$mpg)
 
